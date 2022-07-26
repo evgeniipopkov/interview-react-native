@@ -1,0 +1,33 @@
+{
+    "files.exclude": {
+        "/.classpath": true,
+        "/.project": true,
+        "/.settings": true,
+        "/.factorypath": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "expand",
+    "editor.overviewRulerBorder": false,
+    "editor.showFoldingControls": "mouseover",
+    "editor.quickSuggestionsDelay": 0,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "cSpell.words": [
+        "rarus"
+    ],
+}
