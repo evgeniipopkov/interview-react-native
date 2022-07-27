@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { DefaultLayout } from 'components';
 
-import { DefaultContainer } from 'components';
+import en from '../locales/en';
 
 export default () => (
-  <DefaultContainer>
-    <Text>Message</Text>
-  </DefaultContainer>
+  <DefaultLayout header={en.header}>
+    {null}
+  </DefaultLayout>
 );

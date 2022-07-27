@@ -13,6 +13,7 @@ module.exports = {
           navigation: './src/core/navigation',
           screens: './src/core/shared/screens',
           components: './src/core/shared/components',
+          svgImages: './src/core/shared/images',
           interfaces: './src/core/shared/interfaces',
         },
       },

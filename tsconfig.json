@@ -21,6 +21,9 @@
       "components": [
         "./src/core/shared/components"
       ],
+      "svgImages": [
+        "./src/core/shared/images"
+      ],
       "navigation": [
         "./src/core/navigation"
       ],
