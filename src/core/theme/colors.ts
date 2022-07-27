@@ -7,6 +7,7 @@ const colors: ColorsType = {
   text1: '#1F1F39',
   text2: '#858597',
   text3: '#B8B8D2',
+  text4: '#F4F3FD',
   valid: '#E56B6F',
 };
 

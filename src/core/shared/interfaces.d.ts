@@ -9,4 +9,8 @@ interface IStyle {
   style?: ViewStyle | ViewStyle[],
 }
 
-export { IChildren, IStyle };
+interface IColor {
+  color: string
+}
+
+export { IChildren, IStyle, IColor };
