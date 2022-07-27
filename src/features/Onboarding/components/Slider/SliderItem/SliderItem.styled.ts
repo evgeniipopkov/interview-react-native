@@ -18,7 +18,7 @@ const Header = styled.Text`
   line-height: 32px;
   text-align: center;
   ${({ theme: { colors, fonts } }) => css`
-    color: ${colors.textPrimary};
+    color: ${colors.text1};
     font-family: ${fonts.semiBold};
   `};
 `;
@@ -30,7 +30,7 @@ const Description = styled.Text`
   line-height: 24px;
   text-align: center;
   ${({ theme: { colors, fonts } }) => css`
-    color: ${colors.textSecondary};
+    color: ${colors.text2};
     font-family: ${fonts.regular};
   `};
 `;

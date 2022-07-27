@@ -20,7 +20,7 @@ const Button = styled.Pressable`
 const ButtonText = styled.Text`
   font-size: 14px;
   ${({ theme: { colors, fonts } }) => css`
-    color: ${colors.textSecondary};
+    color: ${colors.text2};
     font-family: ${fonts.regular};
   `};
 `;

@@ -4,9 +4,11 @@ type FontType = 'regular'
 
 type ColorType = 'white'
   | 'primary'
-  | 'textPrimary'
-  | 'textSecondary'
   | 'tertiary'
+  | 'text1'
+  | 'text2'
+  | 'text3'
+  | 'valid'
 
 type FontsType = { [prop in FontType]: string }
 

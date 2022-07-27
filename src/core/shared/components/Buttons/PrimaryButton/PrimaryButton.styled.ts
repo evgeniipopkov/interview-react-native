@@ -1,6 +1,7 @@
 import styled, { css } from 'theme/styled';
+import { PrimaryButtonSCProps } from './interfaces';
 
-const Button = styled.Pressable<{ width?: number }>`
+const Button = styled.Pressable<PrimaryButtonSCProps>`
   height: 50px;
   border-radius: 12px;
   align-items: center;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
 
 import Navigation from 'navigation';
 import { colors, fonts } from 'theme';
@@ -16,7 +15,6 @@ const theme: ITheme = {
 
 export default () => (
   <ThemeProvider theme={theme}>
-    <StatusBar barStyle="dark-content" translucent backgroundColor="transparent" />
     <Navigation />
   </ThemeProvider>
 );
