@@ -1,6 +1,6 @@
-import { IFonts } from './interfaces';
+import { FontsType } from './interfaces';
 
-const fonts: IFonts = {
+const fonts: FontsType = {
   regular: 'Poppins-Regular',
   medium: 'Poppins-Medium',
   semiBold: 'Poppins-SemiBold',

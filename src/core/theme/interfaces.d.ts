@@ -2,22 +2,21 @@ type FontType = 'regular'
   | 'medium'
   | 'semiBold'
 
-type ColorsType = 'white'
+type ColorType = 'white'
   | 'primary'
   | 'textPrimary'
   | 'textSecondary'
+  | 'tertiary'
 
-interface IFonts {
-  [prop in FontType]: string
-}
+type FontsType = { [prop in FontType]: string }
 
-interface IColors {
-  [prop in ColorsType]: string
-}
+type ColorsType = { [prop in ColorType]: string }
 
 interface ITheme {
-  fonts: IFonts,
-  colors: IColors
+  fonts: FontsType,
+  colors: ColorsType,
+  width: number,
+  height: number
 }
 
-export { IFonts, IColors, ITheme };
+export { FontsType, ColorsType, ITheme };
