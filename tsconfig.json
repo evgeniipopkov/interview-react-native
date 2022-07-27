@@ -18,6 +18,30 @@
       "theme/*": [
         "./src/core/theme/*"
       ],
+      "components": [
+        "./src/core/shared/components"
+      ],
+      "navigation": [
+        "./src/core/navigation"
+      ],
+      "navigation/*": [
+        "./src/core/navigation/*"
+      ],
+      "features/*": [
+        "./src/features/*"
+      ],
+      "constants/*": [
+        "src/core/shared/constants/*"
+      ],
+      "screens": [
+        "./src/core/shared/screens"
+      ],
+      "interfaces": [
+        "./src/core/shared/interfaces"
+      ],
+      "customHooks": [
+        "src/core/shared/hooks"
+      ],
     }
   }
 }

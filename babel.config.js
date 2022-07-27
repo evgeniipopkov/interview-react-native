@@ -7,6 +7,13 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.jsx', '.js', '.json', '.d.ts'],
         alias: {
           theme: './src/core/theme',
+          features: './src/features',
+          customHooks: './src/core/shared/hooks',
+          constants: './src/core/shared/constants',
+          navigation: './src/core/navigation',
+          screens: './src/core/shared/screens',
+          components: './src/core/shared/components',
+          interfaces: './src/core/shared/interfaces',
         },
       },
     ],
