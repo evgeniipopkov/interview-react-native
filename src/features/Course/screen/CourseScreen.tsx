@@ -1,10 +1,12 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { DefaultLayout } from 'components';
 
-import { DefaultContainer } from 'components';
+import en from '../locales/en';
+import { Tiles, Courses } from '../components';
 
 export default () => (
-  <DefaultContainer>
-    <Text>Course</Text>
-  </DefaultContainer>
+  <DefaultLayout showAvatar header={en.header}>
+    <Tiles />
+    <Courses />
+  </DefaultLayout>
 );

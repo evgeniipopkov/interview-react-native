@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { ViewStyle } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
+import { DefaultContainer } from 'components';
 import { NoAuthStackList } from 'navigation/stacks/types';
-import { AppStatusBar, DefaultContainer } from 'components';
 
 import { Skip, Slider, SignUp } from '../components';
 
@@ -16,7 +16,6 @@ export default ({ navigation }: NativeStackScreenProps<NoAuthStackList>) => {
 
   return (
     <DefaultContainer style={containerStyle}>
-      <AppStatusBar barStyle="dark-content" />
       <Skip currentIdx={currentIdx} onPress={navigateSignUp} />
       <Slider setCurrentIdx={setCurrentIdx} />
       <SignUp currentIdx={currentIdx} onPress={navigateSignUp} />

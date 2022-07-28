@@ -12,6 +12,7 @@ type ColorType = 'white'
   | 'valid'
   | 'orange'
   | 'lightOrange'
+  | 'brightGray'
 
 type FontsType = { [prop in FontType]: string }
 

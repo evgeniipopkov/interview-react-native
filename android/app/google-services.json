@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "365203883176",
+    "project_id": "interview-dec01",
+    "storage_bucket": "interview-dec01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365203883176:android:490e97690cf26659706e9d",
+        "android_client_info": {
+          "package_name": "com.interview_one_s_rarus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365203883176-kjt16v8hqfb387qfrp98cbbgsvkn3dqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkTkW5dm_9FWj1La7dyTmoGsPsvZ_184w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365203883176-kjt16v8hqfb387qfrp98cbbgsvkn3dqt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "365203883176-v2c6jdtq7kbgsdbp0m0im7b8m0psf6r9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.interview-one-s-rarus"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

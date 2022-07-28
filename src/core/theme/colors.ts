@@ -10,7 +10,8 @@ const colors: ColorsType = {
   text4: '#F4F3FD',
   valid: '#E56B6F',
   orange: '#FF6905',
-  lightOrange: '#ffd2b4',
+  lightOrange: '#FFEBF0',
+  brightGray: '#EDF0F1',
 };
 
 export default colors;

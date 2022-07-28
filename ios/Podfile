@@ -12,6 +12,13 @@ target 'interview_one_s_rarus' do
   # Flags change depending on the env values.
   flags = get_default_flags()
 
+  # firebase
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+  # pod 'Firebase/Firestore', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  $RNFirebaseAsStaticFramework = true
+
   use_react_native!(
     :path => config[:reactNativePath],
     # to enable hermes on iOS, change `false` to `true` and then install pods
@@ -28,8 +35,12 @@ target 'interview_one_s_rarus' do
     # Pods for testing
   end
 
+  use_flipper!()
+
   post_install do |installer|
     react_native_post_install(installer)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
 end
+
+

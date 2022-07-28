@@ -4,7 +4,7 @@ import { TabBarSCProps } from './interfaces';
 const Container = styled.View`
   flex-direction: row;
   align-items: flex-end;
-  padding: 10px 0 10px;
+  padding: 10px 15px 10px;
   justify-content: space-around;
   background-color: ${({ theme }) => theme.colors.white};
 `;

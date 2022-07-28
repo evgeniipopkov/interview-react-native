@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, ViewStyle } from 'react-native';
 
 import { colors } from 'theme';
-import { AppStatusBar, DefaultContainer } from 'components';
+import { DefaultContainer } from 'components';
 
 import {
   Plan,
@@ -17,7 +17,6 @@ const containerStyle: ViewStyle = { backgroundColor: colors.primary };
 
 export default () => (
   <DefaultContainer style={containerStyle}>
-    <AppStatusBar barStyle="light-content" />
     <Header />
     <Content>
       <ScrollView showsVerticalScrollIndicator={false}>

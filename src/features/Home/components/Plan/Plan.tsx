@@ -29,8 +29,7 @@ const circleStyle: ViewStyle = { height: 22, width: 22 };
 const Gradient = () => (
   <Defs key="gradient">
     <LinearGradient id="gradient" x1="0%" x2="0%" y2="100%">
-      <Stop offset="0%" stopColor={colors.lightOrange} />
-      <Stop offset="50%" stopColor={colors.orange} />
+      <Stop offset="0%" stopColor={colors.orange} />
       <Stop offset="100%" stopColor={colors.lightOrange} />
     </LinearGradient>
   </Defs>
