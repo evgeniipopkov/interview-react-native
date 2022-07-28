@@ -6,6 +6,7 @@ module.exports = {
         root: ['./src'],
         extensions: ['.ts', '.tsx', '.jsx', '.js', '.json', '.d.ts'],
         alias: {
+          store: './src/core/store',
           theme: './src/core/theme',
           features: './src/features',
           customHooks: './src/core/shared/hooks',

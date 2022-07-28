@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Keyboard, Pressable } from 'react-native';
 
 import { PrimaryButton } from 'components';
+import { register } from 'store/user/slice';
+import { setShowModal } from 'store/app/slice';
 
+import config from 'constants/config';
 import en from '../../locales/en';
 import { CheckIcon, EyeIcon } from '../../images';
 
@@ -48,6 +52,8 @@ export default () => {
     },
   ];
 
+  const dispatch = useDispatch();
+
   const onPress = () => {
     Keyboard.dismiss();
 
@@ -65,7 +71,8 @@ export default () => {
 
     if (!formValid) return;
 
-    console.log('press');
+    setTimeout(() => dispatch(register()), 50);
+    setTimeout(() => dispatch(setShowModal(true)), config.IS_ANDROID ? 200 : 100);
   };
 
   return (

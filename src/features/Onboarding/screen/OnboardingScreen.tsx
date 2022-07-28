@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { ViewStyle } from 'react-native';
+import { useFocusEffect } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import { DefaultContainer } from 'components';
+import { useFocusUpdateBarStyle } from 'customHooks';
 import { NoAuthStackList } from 'navigation/stacks/types';
 
 import { Skip, Slider, SignUp } from '../components';
@@ -13,6 +15,8 @@ export default ({ navigation }: NativeStackScreenProps<NoAuthStackList>) => {
   const [currentIdx, setCurrentIdx] = useState<number>(0);
 
   const navigateSignUp = () => navigation.navigate('SignUpScreen');
+
+  useFocusUpdateBarStyle('dark-content', useFocusEffect);
 
   return (
     <DefaultContainer style={containerStyle}>

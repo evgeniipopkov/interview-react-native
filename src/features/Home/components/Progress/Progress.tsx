@@ -3,7 +3,7 @@ import { ViewStyle } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import { colors } from 'theme';
-import randomInteger from 'helpers/utils';
+import { randomInteger } from 'helpers/utils';
 
 import en from '../../locales/en';
 

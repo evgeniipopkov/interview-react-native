@@ -12,6 +12,12 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "store": [
+        "./src/core/store"
+      ],
+      "store/*": [
+        "./src/core/store/*"
+      ],
       "theme": [
         "./src/core/theme"
       ],

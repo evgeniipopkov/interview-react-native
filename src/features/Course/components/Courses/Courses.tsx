@@ -1,38 +1,34 @@
 import React, { useEffect, useState } from 'react';
-import firestore from '@react-native-firebase/firestore';
 import { FlatList, RefreshControl, ScrollView } from 'react-native';
 
-import randomInteger from 'helpers/utils';
 import { colors } from 'theme';
 import { useFlatListItem } from 'customHooks';
 
 import Course from './Course';
 import Header from './Header';
 import Placeholder from './Placeholder';
-import { ICourse } from './interfaces';
+import { useGetCoursesQuery } from '../../services';
+import { ICourse } from '../../services/interfaces';
 
 const getItem = ({ item }: { item: ICourse }) => <Course item={item} />;
 
 export default () => {
-  const [courses, setCourses] = useState<ICourse[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [refreshing, setRefreshing] = useState<boolean>(false);
 
-  useEffect(() => {
-    if (!isLoading && !refreshing) return;
+  const {
+    data,
+    isLoading,
+    isFetching,
+    refetch,
+  } = useGetCoursesQuery();
 
-    firestore()
-      .collection('Courses')
-      .get()
-      .then((r) => setCourses(r.docs.map((d) => ({
-        ...d.data(),
-        idxImage: randomInteger(0, 5),
-      }) as ICourse)))
-      .finally(() => {
-        if (refreshing) setRefreshing(false);
-        if (isLoading) setTimeout(() => setIsLoading(false), 800);
-      });
-  }, [isLoading, refreshing]);
+  useEffect(() => {
+    refetch();
+  }, [refreshing]);
+
+  useEffect(() => {
+    if (!isFetching && refreshing) setRefreshing(false);
+  }, [isFetching]);
 
   const { keyExtractor, renderItem } = useFlatListItem<ICourse>('name', getItem);
 
@@ -60,7 +56,7 @@ export default () => {
     )
     : (
       <FlatList<ICourse>
-        data={courses}
+        data={data}
         windowSize={10}
         initialNumToRender={10}
         maxToRenderPerBatch={10}

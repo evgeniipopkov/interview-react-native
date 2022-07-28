@@ -6,4 +6,9 @@ export default {
   yourEmail: 'Your Email',
   password: 'Password',
   required: 'Required',
+  done: 'Done',
+  modal: {
+    header: 'Success',
+    description: 'Congratulations, you have completed your registration!',
+  },
 };

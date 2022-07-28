@@ -1,4 +1,4 @@
-import { ICourse } from '../interfaces';
+import { ICourse } from '../../../services/interfaces';
 
 interface CourseProps {
   item: ICourse

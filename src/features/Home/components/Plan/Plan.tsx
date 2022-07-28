@@ -5,7 +5,7 @@ import { ProgressCircle } from 'react-native-svg-charts';
 import { Defs, LinearGradient, Stop } from 'react-native-svg';
 
 import { colors } from 'theme';
-import randomInteger from 'helpers/utils';
+import { randomInteger } from 'helpers/utils';
 
 import en from '../../locales/en';
 
