@@ -6,16 +6,18 @@ import { StackType, StackProps } from './interfaces';
 
 const createStack = <T extends StackType>(
   animation: StackAnimationTypes,
-  screens: StackProps<T>[]) => {
+  screens: StackProps<T>[],
+) => {
   const Stack = createNativeStackNavigator();
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false, animation }}>
-      {screens.map(({ name, component }) => (
+      {screens.map(({ name, component, presentation }) => (
         <Stack.Screen
           key={name as string}
           name={name as string}
           component={component}
+          options={{ presentation }}
         />
       ))}
     </Stack.Navigator>

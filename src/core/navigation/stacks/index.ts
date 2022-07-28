@@ -1,7 +1,5 @@
 import { StackAnimationTypes } from 'react-native-screens';
 
-import config from 'constants/config';
-
 import {
   HelpScreen,
   SignUpScreen,
@@ -12,6 +10,7 @@ import {
   OnboardingScreen,
 } from 'screens';
 
+import config from 'constants/config';
 import createStack from '../helpers/navigation';
 import { AccountStackList, NoAuthStackList } from './types';
 
@@ -28,11 +27,11 @@ const NoAuthStack = () => createStack<NoAuthStackList>(
 const AccountStack = () => createStack<AccountStackList>(
   defaultAnimation,
   [
+    { name: 'HelpScreen', component: HelpScreen },
     { name: 'AccountScreen', component: AccountScreen },
-    { name: 'EditAccountScreen', component: EditAccountScreen },
     { name: 'FavoriteScreen', component: FavoriteScreen },
     { name: 'SettingsScreen', component: SettingsScreen },
-    { name: 'HelpScreen', component: HelpScreen },
+    { name: 'EditAccountScreen', component: EditAccountScreen, presentation: config.IS_ANDROID ? 'card' : 'modal' },
   ],
 );
 

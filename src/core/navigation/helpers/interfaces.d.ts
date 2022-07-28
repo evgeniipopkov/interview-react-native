@@ -2,9 +2,19 @@ type StackType = {
   [propName: string]: unknown
 }
 
-export interface StackProps<T> {
+type PresentationType = 'modal'
+  | 'transparentModal'
+  | 'containedModal'
+  | 'containedTransparentModal'
+  | 'fullScreenModal'
+  | 'formSheet'
+  | 'card'
+  | undefined
+
+interface StackProps<T> {
   name: keyof T,
-  component: ({ navigation }: NativeStackScreenProps<T>) => JSX.Element
+  component: ({ navigation }: NativeStackScreenProps<T>) => JSX.Element,
+  presentation?: PresentationType
 }
 
 export { StackType, StackProps };
