@@ -21,6 +21,9 @@
       "components": [
         "./src/core/shared/components"
       ],
+      "helpers/*": [
+        "./src/core/shared/helpers/*"
+      ],
       "svgImages": [
         "./src/core/shared/images"
       ],
@@ -45,6 +48,27 @@
       "customHooks": [
         "src/core/shared/hooks"
       ],
-    }
-  }
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "lint": {
+          "validProperties": [
+            "shadow-color",
+            "shadow-opacity",
+            "shadow-offset",
+            "shadow-radius",
+            "padding-horizontal",
+            "padding-vertical",
+            "margin-vertical",
+            "margin-horizontal",
+            "tint-color",
+            "aspect-ratio",
+            "elevation",
+            "include-font-padding"
+          ]
+        }
+      }
+    ]
+  },
 }

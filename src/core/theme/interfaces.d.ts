@@ -10,6 +10,8 @@ type ColorType = 'white'
   | 'text3'
   | 'text4'
   | 'valid'
+  | 'orange'
+  | 'lightOrange'
 
 type FontsType = { [prop in FontType]: string }
 

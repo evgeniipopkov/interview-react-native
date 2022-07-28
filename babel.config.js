@@ -12,6 +12,7 @@ module.exports = {
           constants: './src/core/shared/constants',
           navigation: './src/core/navigation',
           screens: './src/core/shared/screens',
+          helpers: './src/core/shared/helpers',
           components: './src/core/shared/components',
           svgImages: './src/core/shared/images',
           interfaces: './src/core/shared/interfaces',
