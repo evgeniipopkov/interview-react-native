@@ -32,6 +32,7 @@ export default () => {
   const inputs = [
     {
       value: email,
+      autoFocus: true,
       label: en.yourEmail,
       placeholder: en.yourEmail,
       valid: validEmail,
@@ -81,6 +82,7 @@ export default () => {
         label,
         value,
         valid,
+        autoFocus,
         placeholder,
         secureTextEntry,
         Icon,
@@ -94,6 +96,7 @@ export default () => {
             <Input
               valid={valid}
               existIcon={!!Icon}
+              autoFocus={autoFocus}
               autoCapitalize="none"
               placeholder={placeholder}
               value={valid ? value : en.required}

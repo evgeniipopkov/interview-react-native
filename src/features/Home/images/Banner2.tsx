@@ -19,7 +19,7 @@ const originalHeight = 155;
 const aspectRatio = originalWidth / originalHeight;
 
 export default () => (
-  <View style={{ width: width * 0.64, aspectRatio }}>
+  <View style={{ width: width * 0.62, aspectRatio }}>
     <Svg
       width="100%"
       height="100%"

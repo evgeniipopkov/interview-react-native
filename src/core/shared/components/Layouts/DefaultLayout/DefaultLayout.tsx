@@ -10,10 +10,10 @@ import { HeaderContainer, HeaderWrapper, Header } from './DefaultLayout.styled';
 const containerStyle: ViewStyle = { paddingHorizontal: 20 };
 
 export default ({
-  children, header, showAvatar, onPressBack,
+  children, header, showAvatar, styleHeader, onPressBack,
 }: DefaultLayoutProps) => (
   <DefaultContainer style={containerStyle}>
-    <HeaderContainer>
+    <HeaderContainer style={styleHeader}>
       <HeaderWrapper>
         {onPressBack && (
           <Pressable onPress={onPressBack}>

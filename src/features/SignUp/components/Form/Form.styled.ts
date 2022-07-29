@@ -54,7 +54,7 @@ const InputWrapper = styled.View<Pick<FormSCProps, 'valid'>>`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: ${config.IS_ANDROID ? '10px 14px' : '12px 14px'};
+  padding-horizontal: 14px;
   border-color: ${({ valid, theme: { colors } }) => (valid ? colors.text3 : colors.valid)};
 `;
 
@@ -68,11 +68,11 @@ const InputLabel = styled.Text`
 `;
 
 const Input = styled.TextInput<Pick<FormSCProps, 'existIcon' | 'valid'>>`
-  padding: 0;
   font-size: 14px;
   line-height: 20px;
+  padding-vertical: ${config.IS_ANDROID ? 8 : 12}px;
   ${({ valid, existIcon, theme: { colors, fonts } }) => css`
-    width: ${existIcon ? 80 : 100}%;
+    width: ${existIcon ? 60 : 100}%;
     color: ${valid ? colors.text1 : colors.valid};
     font-family: ${fonts.regular};
   `};

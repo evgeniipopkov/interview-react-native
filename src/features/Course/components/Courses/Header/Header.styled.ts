@@ -16,7 +16,8 @@ const Header = styled.Text`
 `;
 
 const Tabs = styled.View`
-  margin-top: 20px;
+  margin-top: 22px;
+  margin-bottom: 4px;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;

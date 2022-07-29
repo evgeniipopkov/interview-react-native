@@ -27,8 +27,8 @@ const NoAuthStack = () => createStack<NoAuthStackList>(
 const AccountStack = () => createStack<AccountStackList>(
   defaultAnimation,
   [
-    { name: 'HelpScreen', component: HelpScreen },
     { name: 'AccountScreen', component: AccountScreen },
+    { name: 'HelpScreen', component: HelpScreen },
     { name: 'FavoriteScreen', component: FavoriteScreen },
     { name: 'SettingsScreen', component: SettingsScreen },
     { name: 'EditAccountScreen', component: EditAccountScreen, presentation: config.IS_ANDROID ? 'card' : 'modal' },
